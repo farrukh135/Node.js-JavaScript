@@ -5,13 +5,13 @@ tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",
     fullname: {
         userfullname: {
-            firstname: "hitesh",
+            firstname: "Farrukh",
             lastname: "choudhary",
             password: {
                 oldPassword: "123456789",
@@ -25,7 +25,7 @@ const regularUser = {
     }
 }
 
-// console.log(regularUser);
+console.log(regularUser);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -34,50 +34,50 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = { obj1, obj2 }
 // const obj3 = Object.assign({}, obj1, obj2, obj4)
 
-const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
+const obj3 = {...obj1, ...obj2, ...obj4}
+console.log(obj3);
 
 
-// const users = [
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-//     {
-//         id: 1,
-//         email: "h@gmail.com"
-//     },
-// ]
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 2,
+        email: "f@gmail.com"
+    },
+    {
+        id: 3,
+        email: "a@gmail.com"
+    },
+]
 
-// users[1].email
-// console.log(tinderUser);
+users[1].email
+console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
-// const course = {
-//     coursename: "js in hindi",
-//     price: "999",
-//     courseInstructor: "hitesh"
-// }
+const course = {
+    coursename: "JS in urdu",
+    price: "999",
+    courseInstructor: "Farrukh"
+}
 
-// course.courseInstructor
+course.courseInstructor
 
-// const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course
 
-// // console.log(courseInstructor);
-// // console.log(instructor);
+// console.log(courseInstructor);
+console.log(instructor);
 
 // // {
-// //     "name": "hitesh",
+// //     "name": "Farrukh",
 // //     "coursename": "js in hindi",
 // //     "price": "free"
 // // }
