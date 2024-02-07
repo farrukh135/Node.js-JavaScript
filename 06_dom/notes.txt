@@ -1,0 +1,101 @@
+document.getElementById('title')
+<h1 id=​"title" class=​"heading">​DOM learning on Chai aur code​</h1>​
+document.getElementById('title').id
+'title'
+document.getElementById('title').class
+undefined
+document.getElementById('title').className
+'heading'
+document.getElementById('title').getAttribute('id')
+'title'
+document.getElementById('title').getAttribute('class')
+'heading'
+document.getElementById('title').setAttribute('class', 'test')
+undefined
+document.getElementById('title').setAttribute('class', 'test heading')
+undefined
+const title = document.getElementById('title')
+undefined
+title
+<h1 id=​"title" class=​"test heading">​DOM learning on Chai aur code​</h1>​
+title.style.backgroundColor = "green"
+'green'
+title.style.borderRadius = '25px'
+'25px'
+title.style.borderRadius = '15px'
+'15px'
+title.style.padding = '15px'
+'15px'
+title
+<h1 id=​"title" class=​"test heading" style=​"background-color:​ green;​ border-radius:​ 15px;​ padding:​ 15px;​">​DOM learning on Chai aur code​</h1>​
+title.textContent
+'DOM learning on Chai aur code'
+title.innerHTML
+'DOM learning on Chai aur code'
+title.innerText
+'DOM learning on Chai aur code'
+title.innerText
+'DOM learning and Farrukh Ali'
+title.textContent                           // We Use it when we want to get all Content in specific ID
+'DOM learning and Farrukh Ali test text' 
+title.innerHTML                             // When we use it, it gives more information about HTML Tags and Attributes
+'DOM learning and Farrukh Ali <span style="display: none;">test text</span>'
+
+// querySelector Select only first tag on page 
+document.querySelector('h1')                
+<h1 id=​"title" class=​"heading">​"DOM learning and Farrukh Ali "<span style=​"display:​ none;​">​test text​</span>​</h1>​
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('input[type=password]')
+<input type=​"password" name id>​
+document.querySelector('ul')
+<ul>​…​</ul>​
+const myUl = document.querySelector('ul')
+undefined
+myUl.querySelector('li')
+<li>​…​</li>​
+const turnGreen = myUl.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = 'green'
+'green'
+turnGreen.style.padding = '10px'
+'10px'
+turnGreen.innerText
+'One'
+turnGreen.innerText = 'Five'
+'Five'
+
+// querySelectorAll wants some Array type data like node list for editing or manipulation
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(3) [li, li, li]
+tempLiList[0].style.color = 'green'
+'green'
+ tempLiList.forEach(function (l) {
+     l.style.backgroundColor = 'red'
+ })
+
+ document.getElementsByClassName('list-item')
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const tempClassList = document.getElementsByClassName('list-item')
+undefined
+tempClassList
+HTMLCollection(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+Array.from(tempClassList)
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+const myConvertedArray = Array.from(tempClassList)
+undefined
+myConvertedArray
+(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+myConvertedArray.forEach(function (li) {
+    li.style.backgroundColor = 'Orange'
+})
+undefined
+myConvertedArray.forEach(function (li) {
+    li.style.color = 'Red'
+})
+undefined
+
