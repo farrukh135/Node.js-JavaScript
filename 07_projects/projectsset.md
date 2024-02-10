@@ -68,3 +68,15 @@ form.addEventListener('submit', function (e) {
 
 ```
 
+### Project 3 (Digital Clock)
+
+```javascript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleString();
+}, 1000);
+
+```
+
