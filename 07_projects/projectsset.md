@@ -1,7 +1,7 @@
 # Projects Related to JS | DOM
 
 ## Projects link 
-[Click Here to View All Projects Live](https://stackblitz.com/edit/web-platform-praifu?file=index.html)
+[Click Here to View All Projects Live](https://stackblitz.com/edit/web-platform-7abkqw?file=index.html)
 
 ## Solution Codes
 ### Project 1 (Colors Changer)
