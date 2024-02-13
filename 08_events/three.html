@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        let intervalId;
+
+        // Function to log current date and time
+        const logCurrentDateTime = function() {
+            const now = new Date();
+            console.log("Farrukh", now.toLocaleString());
+        }
+
+        // Event listener for Start button
+        document.querySelector('#start').addEventListener('click', function () {
+            // Check if interval is already running to avoid starting multiple intervals
+            if (!intervalId) {
+                intervalId = setInterval(logCurrentDateTime, 1000);
+                logCurrentDateTime(); // Log immediately when Start is clicked
+            }
+        });
+
+        // Event listener for Stop button
+        document.querySelector('#stop').addEventListener('click', function () {
+            // Check if interval is running to avoid clearing non-existing interval
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null; // Reset intervalId
+                console.log("This is Stopped");
+            }
+        });
+    </script>
+</body>
+</html>
