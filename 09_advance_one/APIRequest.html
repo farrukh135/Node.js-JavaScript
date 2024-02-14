@@ -31,6 +31,12 @@
             border-radius: 50%;
             margin-bottom: 10px;
         }
+        #repositoriesLink {
+            color: white
+        }
+        #profileLink {
+            color: white
+        }
     </style>
 </head>
 <body>
@@ -80,8 +86,6 @@
                 profileEmail.textContent = data.email;
 
                 document.getElementById('profileCard').style.display = 'block';
-                profileLink.style.color = "white"
-                repositoriesLink.style.color = "white"
             }
         }
         xhr.send();
