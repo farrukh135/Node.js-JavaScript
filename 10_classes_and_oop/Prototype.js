@@ -1,5 +1,5 @@
-// let myName = "Farrukh     "
-// let mychannel = "chai     "
+let myName = "Farrukh     "
+let mychannel = "chai     "
 
 // console.log(myName.trueLength);
 
@@ -54,6 +54,8 @@ Teacher.__proto__ = User
 
 // modern syntax
 Object.setPrototypeOf(TeachingSupport, Teacher)
+
+
 
 let anotherUsername = "ChaiAurCode     "
 
